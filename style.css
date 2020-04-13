@@ -10,9 +10,16 @@ body {
     flex-wrap: wrap;
     margin-top: 100px;
   }
+  .user_Block{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(https://cs10.pikabu.ru/post_img/2020/04/11/5/158658919225988347.webp);
+    width: 100%;
+    height: 50%;
+  }
   .user_Block__wrapper{
     height: 150px;
-    border: 1px solid black;
     width: 20%;
     margin-right: 25px;
     margin-bottom: 25px;
@@ -20,12 +27,24 @@ body {
     -moz-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.15);
     box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.15);
     cursor: pointer;
+    background: white;
   }
-  .user_Block{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+  .user_Block__img img{
+    height: 80px;
+    width: 80px;
+    position: relative;
+    top: 40px;
+    left: 35%;
+    border-radius: 50%;
+    border: 10px solid white;
   }
+  .user_Block__description{
+    position: relative;
+    top: 90px;
+    left: -20%;
+  }
+
 
 
 
@@ -56,37 +75,44 @@ body {
 .switch {
     display: inline-block;
     font-size: 20px;
-    height: 1em;
-    width: 2em;
+    height: 2em;
+    width: 5em;
     background: #BDB9A6;
-    border-radius: 1em;
+    border-radius: 0.5em;
     position: absolute;
     right: 16px;
     top: 25px;
-    cursor: pointer;
   }
   
   .switch input {
     position: absolute;
     opacity: 0;
+    width: 100px;
+    height: 40px;
+    z-index: 5;
+    cursor: pointer;
   }
 
   .switch div {
-    height: 1em;
-    width: 1em;
-    border-radius: 1em;
+    height: 2em;
+    width: 1.5em;
+    border-radius: 0.5em;
     background: #FFF;
     box-shadow: 0 0.1em 0.3em rgba(0, 0, 0, 0.3);
     -webkit-transition: all 300ms;
     -moz-transition: all 300ms;
     transition: all 300ms;
   }
-  
+
   .switch input:checked + div {
-    -webkit-transform: translate3d(100%, 0, 0);
-    -moz-transform: translate3d(100%, 0, 0);
-    transform: translate3d(100%, 0, 0);
+    -webkit-transform: translate3d(240%, 0, 0);
+    -moz-transform: translate3d(240%, 0, 0);
+    transform: translate3d(240%, 0, 0);
   }
+
+
+
+
   
   #menuToggle {
     display: block;
