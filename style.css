@@ -2,15 +2,17 @@ body {
     background: whitesmoke;
     margin: 0;
   }
-
-  .rows{
+  .main_pages{
+    transition: opacity .7s;
+  }
+  .main_pages__wrapper{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
     margin-top: 100px;
   }
-  .user_Block{
+  .cards{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -18,7 +20,7 @@ body {
     width: 100%;
     height: 50%;
   }
-  .user_Block__wrapper{
+  .cards__wrapper{
     height: 150px;
     width: 20%;
     margin-right: 25px;
@@ -29,8 +31,12 @@ body {
     cursor: pointer;
     background: white;
   }
+  .cards__wrapper:hover{
+    transition: .3s ease-in-out;
+    transform: scale(1.05);
+  }
 
-  .user_Block__img img{
+  .cards__img img{
     height: 80px;
     width: 80px;
     position: relative;
@@ -39,7 +45,7 @@ body {
     border-radius: 50%;
     border: 10px solid white;
   }
-  .user_Block__description{
+  .cards__description{
     position: relative;
     top: 90px;
     left: -20%;
