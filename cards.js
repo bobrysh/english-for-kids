@@ -1,6 +1,6 @@
-const cards = [ 
-  ['Action (set A)', 'Action (set B)', 'Animal (set A)', 'Animal (set B)', 'Clothes', 'Emotions'],
-  [
+const cards = [ 'cardsActionA', 'cardsActionB', 'cardsAnimalA', 'cardsAnimalB', 'cardsClothes', 'cardsEmotion']
+
+  const cardsActionA =   [
     {
       word: 'cry',
       translation: 'плакать',
@@ -49,8 +49,9 @@ const cards = [
       image: 'img/jump.jpg',
       audioSrc: 'audio/jump.mp3'
     }
-  ],
-  [
+  ]
+
+  const cardsActionB = [
     {
       word: 'open',
       translation: 'открывать',
@@ -99,8 +100,9 @@ const cards = [
       image: 'img/swim.jpg',
       audioSrc: 'audio/swim.mp3'
     }
-  ],
-  [
+  ]
+  
+  const cardsAnimalA =[
     {
       word: 'cat',
       translation: 'кот',
@@ -149,8 +151,9 @@ const cards = [
       image: 'img/sheep.jpg',
       audioSrc: 'audio/sheep.mp3'
     }
-  ],
-  [
+  ]
+  
+  const cardsAnimalB = [
     {
       word: 'bird',
       translation: 'птица',
@@ -199,8 +202,9 @@ const cards = [
       image: 'img/dolphin.jpg',
       audioSrc: 'audio/dolphin.mp3'
     }
-  ],
-  [
+  ]
+  
+  const cardsClothes = [
     {
       word: 'skirt',
       translation: 'юбка',
@@ -249,8 +253,9 @@ const cards = [
       image: 'img/shoe.jpg',
       audioSrc: 'audio/shoe.mp3'
     }
-  ],
-  [
+  ]
+  
+  const cardsEmotion = [
     {
       word: 'sad',
       translation: 'грустный',
@@ -300,10 +305,3 @@ const cards = [
       audioSrc: 'audio/laugh.mp3'
     }
   ]
-]
-
-
-
-
-
-// export default cards;

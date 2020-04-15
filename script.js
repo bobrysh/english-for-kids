@@ -14,10 +14,20 @@ const actionPage1Inner = document.getElementById('action1inner');
 
 
 window.onload = function init() {
-    actionPage1.addEventListener('click', () => {
-        mainPages.style = "opacity: 0;"
-        actionPage1Inner.style = "opacity: 1;"
-    })
 
-    
+    const modeCheck = () => {
+        document.addEventListener('change', function () {
+            // var chk = document.querySelector("#switch > input[type=checkbox]")
+            var chk = document.getElementById('switch');
+            if (chk.checked) {
+                document.querySelectorAll('.cards').forEach(el => el.classList.toggle('train-state'))
+                document.getElementById('switch').classList.toggle('colored');
+            }else{
+                document.querySelectorAll('.cards').forEach(el => el.classList.toggle('train-state'))
+                document.getElementById('switch').classList.toggle('colored');
+            }
+        })
+    }
+
+    modeCheck()
 }
