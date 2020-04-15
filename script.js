@@ -16,8 +16,7 @@ const actionPage1Inner = document.getElementById('action1inner');
 window.onload = function init() {
 
     const modeCheck = () => {
-        document.addEventListener('change', function () {
-            // var chk = document.querySelector("#switch > input[type=checkbox]")
+        document.getElementById('switch').onclick = function() {
             var chk = document.getElementById('switch');
             if (chk.checked) {
                 document.querySelectorAll('.cards').forEach(el => el.classList.toggle('train-state'))
@@ -26,7 +25,7 @@ window.onload = function init() {
                 document.querySelectorAll('.cards').forEach(el => el.classList.toggle('train-state'))
                 document.getElementById('switch').classList.toggle('colored');
             }
-        })
+        }
     }
 
     modeCheck()
