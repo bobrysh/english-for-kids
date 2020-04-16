@@ -55,16 +55,78 @@ body {
     background: linear-gradient(180deg,#0099ae,#00bf82 40%,#fff 0,#fff);
   }
 
+  .hidden{
+    display: none;
+  }
 
+.backPage, .frontPage {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  background-size: contain;
+  background-repeat: no-repeat;
+  transition: .3s;
+}
 
+.backPage, .frontPage, .turn {
+  backface-visibility: hidden;
+}
 
+.backPage {
+  transform: rotateY(180deg);
+}
 
+.card_face {
+  margin-top: 200px;
+  font-size: 24px;
+  line-height: 80px;
+  text-align: center;
+  width: 100%;
+  background: #fff;
+}
 
+.turn {
+  position: absolute;
+  width: 33px;
+  height: 45px;
+  background-size: 32px;
+  background-repeat: no-repeat;
+  bottom: 5px;
+  right: 5px;
+  transition: .3s;
+}
 
+.card {
+  position: relative;
+  transform-style: preserve-3d;
+  display: flex;
+  box-sizing: border-box;
+  justify-content: flex-end;
+  width: 300px;
+  height: 280px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 20px;
+  box-shadow: 0 1px 3px 0 #ccc;
+  box-shadow: 0 1px 2px 0 rgba(0,0,0,.4);
+  transition: box-shadow .25s linear,transform .7s;
+}
 
+.card:hover {
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.9);
+} 
 
+.card:hover .rotate {
+  transform: scale(1.15);
+} 
 
-
+.pages_container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 
 
 
